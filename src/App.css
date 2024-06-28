@@ -1,19 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
+.logop {
+  text-align: center;
+  display: flex;
+  position: relative;
+  left: 15px;
+}
+
+.logobg {
+  background-color: #df7e08;
+  color: #F2F2F2;
+  padding: 4px 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+
+.updtbtn {
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  width: 6vw;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +41,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

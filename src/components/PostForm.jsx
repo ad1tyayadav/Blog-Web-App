@@ -34,7 +34,7 @@ function PostForm({ post }) {
                 navigate(`/post/${dbPost.$id}`)
             }
         } else {
-            const file = await appwriteService.uploadFile(data.image[0])
+            const file = await appwriteService.uploadFile(data.image[0]);
             if (file) {
                 const fileId = file.$id
                 data.image = fileId
@@ -64,8 +64,8 @@ function PostForm({ post }) {
     React.useEffect(() => {
         const subscription = watch((value, { name }) => {
             if (name === 'title') {
-                setValue('slug', slugTransform(value.title,
-                    { shouldValidate: true }))
+                setValue('slug', slugTransform(value.title),
+                    { shouldValidate: true })
             }
         })
 
@@ -117,7 +117,7 @@ function PostForm({ post }) {
                     className="mb-4"
                     {...register("status", { required: true })}
                 />
-                <Button type='submit' bgColor={post ? "bg-green-500" : undefined} className="w-full">
+                <Button type='submit' bgColor={post ? "bg-[#df7e08]" : undefined} className="updtbtn">
                     {post ? "Update" : "Submit"}
                 </Button>
             </div>

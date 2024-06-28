@@ -39,9 +39,8 @@ function Header() {
   ]
 
 
-
   return (
-    <header className='py-3 shadow bg-gray-500'>
+    <header className='py-3 shadow bg-black text-white'>
       <Container>
         <nav className='flex'>
           <div className='mr-4'>
@@ -53,7 +52,7 @@ function Header() {
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
-                  <button className='inline-block py-3 px-6 duration-200 hover:bg-blue-100 rounded-full'
+                  <button className='inline-block py-3 px-6 duration-200 hover:bg-[#df7e08] rounded-full'
                     onClick={() => navigate(item.slug)}>
                     {item.name}
                   </button>
