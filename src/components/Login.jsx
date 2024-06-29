@@ -38,15 +38,7 @@ function Login() {
                     </span>
                 </div>
                 <h2 className="text-center text-2xl font-bold leading-tight">Sign in to your account</h2>
-                <p className="mt-2 text-center text-base text-white/60">
-                    Don&apos;t have any account?&nbsp;
-                    <Link
-                        to="/signup"
-                        className="font-medium text-primary transition-all duration-200 hover:underline"
-                    >
-                        Sign Up
-                    </Link>
-                </p>
+                <br />
                 {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
                 <form onSubmit={handleSubmit(login)}>
                     <div className='space-y-5'>
@@ -72,9 +64,18 @@ function Login() {
                         />
                         <Button
                             type='submit'
-                            className='w-full bg-orange-400' >
+                            className='w-full bg-orange-400 updtbtn' >
                             Login
                         </Button>
+                        <p className="mt-2 text-center text-base text-white/60">
+                            Don&apos;t have any account?&nbsp;
+                            <Link
+                                to="/signup"
+                                className="font-medium text-primary transition-all duration-200 hover:underline"
+                            >
+                                Sign Up
+                            </Link>
+                        </p>
                     </div>
                 </form>
             </div>

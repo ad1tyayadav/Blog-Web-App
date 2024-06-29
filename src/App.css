@@ -26,7 +26,13 @@
   border-radius: 20px;
   text-align: center;
   align-items: center;
+  font-weight: 700;
   width: 6vw;
+  background-color: #df7e08 !important;
+}
+
+.updtbtn:hover {
+  background-color: #df7e08c3 !important;
 }
 
 .logo:hover {
