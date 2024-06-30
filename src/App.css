@@ -31,6 +31,23 @@
   background-color: #df7e08 !important;
 }
 
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.footend {
+  height: 35vh;
+}
+
 .updtbtn:hover {
   background-color: #df7e08c3 !important;
 }
